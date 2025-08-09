@@ -28,8 +28,8 @@ window.onscroll = () => {
 }
 document.getElementById("resume-btn").addEventListener("click", function () {
     const link = document.createElement("a");
-    link.href = "C:/Users/arfas/Downloads/Resume.pdf"; // path to your PDF
-    link.download = "C:/Users/arfas/Downloads/Resume.pdf"; // download file name
+    link.href = "Resume.pdf"; // path to your PDF
+    link.download = "Resume.pdf"; // download file name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
