@@ -243,6 +243,10 @@ section{
 .btn:hover::before{
     top: 0;
 }
+a {
+    text-decoration: none;
+}
+
 .social-media {
     margin: 2rem 0;
 }
