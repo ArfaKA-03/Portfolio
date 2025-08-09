@@ -27,13 +27,13 @@ window.onscroll = () => {
     Navbar.classList.remove('active')
 }
 document.getElementById("resume-btn").addEventListener("click", function () {
-//     const link = document.createElement("a");
-//     link.href = "Resume.pdf.pdf"; // path to your PDF
-//     link.download = "Resume.pdf"; // download file name
-//     document.body.appendChild(link);
-//     link.click();
-//     document.body.removeChild(link);
-// });
+    const link = document.createElement("a");
+    link.href = "Resume.pdf.pdf"; // path to your PDF
+    link.download = "Resume.pdf"; // download file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
 //contact form- alert saying form submitted
 document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault(); // stop default form redirect
