@@ -1,4 +1,3 @@
-/*/@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');*/
 * {
     margin: 0;
     padding: 0;
@@ -565,20 +564,6 @@ section.start-animation .btn{
         #4d4d4d,#1C2431,#4d4d4d,#1C2431
     );
 }
-/*project*/
-/* .project-details {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.project-image {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-} */
-
 
 /* footer */
 
@@ -696,7 +681,7 @@ footer i{
     color: #a259ff;
 }
 
-/* Projects Container (similar to .wrapper in w.css) */
+/* Projects Container */
 .projects-container {
     display: flex;
     justify-content: center;
