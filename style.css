@@ -242,10 +242,6 @@ section{
 .btn:hover::before{
     top: 0;
 }
-a {
-    text-decoration: none;
-}
-
 .social-media {
     margin: 2rem 0;
 }
@@ -469,7 +465,8 @@ section.start-animation .skill-box {
 
 /* Hover effect */
 .skill-box:hover i {
-    transform: scale(1.1);
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(162, 89, 255, 0.3);
 }
 
 /* Name styling */
@@ -477,6 +474,112 @@ section.start-animation .skill-box {
     margin: 0;
     font-size: 12px;
     font-weight: 500;
+}
+
+/*Project section*/
+.projects {
+    background-color: #0d1117;;
+    color: #c9d1d9;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.section-title span {
+    color: #a259ff;
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    filter: drop-shadow(0 0 7px #ffffff);
+}
+
+/* Project Card */
+
+.project-card {
+    width: 340px;
+    height: 300px;
+    margin-top: 28px;
+    background-color: #2d333b;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #c9d1d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(162, 89, 255, 0.2);
+}
+
+/* Image Styling */
+.project-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Title and Description */
+.project-card h3 {
+    font-size: 1.6rem;
+    margin: 10px 0 5px;
+    color: #c9d1d9;
+}
+.project-card p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #c9d1d9;
+}
+
+/* Animation when section starts */
+section.start-animation .project-card {
+    animation: slideIn 1s ease forwards;
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.view-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #a259ff;
+    color: #c9d1d9;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.view-link:hover {
+    background-color: #7a36cc;
 }
 /* contact section */
 section form{
@@ -661,109 +764,4 @@ footer i{
     .input-box input{
         width: 100%;
     }
-}
-/*Project section*/
-.projects {
-    background-color: #0d1117;;
-    color: #c9d1d9;
-    text-align: center;
-    padding: 60px 20px;
-    position: relative;
-}
-
-/* Section Title and Subtitle */
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #fff;
-}
-.section-title span {
-    color: #a259ff;
-}
-
-/* Projects Container */
-.projects-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-    filter: drop-shadow(0 0 7px #ffffff);
-}
-
-/* Project Card (similar to .skill-box in w.css) */
-
-.project-card {
-    width: 340px;
-    height: 300px;
-    margin-top: 28px;
-    background-color: #2d333b;
-    border-radius: 1rem;
-    text-align: center;
-    padding: 20px;
-    font-size: 16px;
-    color: #c9d1d9;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover Effect */
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 25px rgba(162, 89, 255, 0.2);
-}
-
-/* Image Styling */
-.project-image {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Title and Description */
-.project-card h3 {
-    font-size: 1.6rem;
-    margin: 10px 0 5px;
-    color: #c9d1d9;
-}
-.project-card p {
-    font-size: 1.3rem;
-    line-height: 1.4;
-    color: #c9d1d9;
-}
-
-/* Animation when section starts (similar to .skill-box) */
-section.start-animation .project-card {
-    animation: slideIn 1s ease forwards;
-}
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.view-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 14px;
-    background-color: #a259ff;
-    color: #c9d1d9;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    transition: background 0.3s ease;
-}
-
-.view-link:hover {
-    background-color: #7a36cc;
 }
