@@ -310,6 +310,8 @@ i:hover::after{
         scale: 1;
     }
 }
+
+
 /* about section */
 .about{
     display: flex;
@@ -422,6 +424,180 @@ section.start-animation .text-content2 .btn{
         opacity: 1;
     }
 }
+/* Education Section */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    gap: 2rem;
+}
+.title{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+section.start-animation .title{
+    animation: top 1s ease forwards;
+}
+@keyframes top{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.title span{
+    color: #6b22a8;
+}
+.HomeText h{
+    padding-top: -10px;
+    font-size: 1.8rem;
+    transform: translatex(10px);
+}
+
+.text-contente2 {
+    text-align: left;
+    padding: 20px;
+}
+
+.text-content2 h2 {
+    font-family: "copperplate";
+    font-weight: 600;
+    font-size: 30px;
+    color: #6b22a8;
+    margin-bottom: 10px;
+}
+
+/* Education List */
+.education-list {
+    list-style-type: none; /* remove default bullets */
+    padding: 0;
+}
+
+.education-list > li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    justify-content: left;
+}
+
+.education-list > li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Degree / School Name */
+.education-list > li > strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #793fa9;
+}
+
+/* Details nested inside each list */
+.education-list > li > ul {
+    color: #fff;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.education-list > li > ul li {
+    margin-bottom: 5px;
+}
+
+/* Optional: smaller font for percentages / CGPA */
+.education-list > li > ul li:last-child {
+    font-weight: 500;
+}
+
+/* Education List */
+.education-list {
+    list-style-type: none; /* remove default bullets */
+    padding: 0;
+}
+
+.education-list > li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    justify-content: left;
+}
+
+.education-list > li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Degree / School Name */
+.education-list > li > strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #793fa9;
+}
+
+/* Details nested inside each list */
+.education-list > li > ul {
+    color: #fff;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.education-list > li > ul li {
+    margin-bottom: 5px;
+}
+
+/* Optional: smaller font for percentages / CGPA */
+.education-list > li > ul li:last-child {
+    font-weight: 500;
+}
+
+/* ------------------------ */
+/* Responsive Design */
+/* Medium devices (tablets) */
+@media (max-width: 991px) {
+    .education-list > li {
+        padding: 15px;
+    }
+
+    .education-list > li > strong {
+        font-size: 18px;
+    }
+
+    .education-list > li > ul {
+        font-size: 1.2rem;
+    }
+}
+
+/* Small devices (phones) */
+@media (max-width: 575px) {
+    .education-list > li {
+        padding: 12px;
+    }
+
+    .education-list > li > strong {
+        font-size: 16px;
+    }
+
+    .education-list > li > ul {
+        font-size: 1rem;
+    }
+
+    .education-list > li > ul li {
+        margin-bottom: 4px;
+    }
+}
+
 /* skill-content */
 .wrapper {
     filter: drop-shadow(0 0 7px #ffffff);
@@ -509,14 +685,14 @@ section.start-animation .skill-box {
 
 .project-card {
     width: 340px;
-    height: 300px;
+    height: 450px;
     margin-top: 28px;
     background-color: #2d333b;
     border-radius: 1rem;
     text-align: center;
     padding: 20px;
     font-size: 16px;
-    color: #c9d1d9;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -543,12 +719,12 @@ section.start-animation .skill-box {
 .project-card h3 {
     font-size: 1.6rem;
     margin: 10px 0 5px;
-    color: #c9d1d9;
+    color: #793fa9;
 }
 .project-card p {
     font-size: 1.3rem;
     line-height: 1.4;
-    color: #c9d1d9;
+    color: #fff;
 }
 
 /* Animation when section starts */
