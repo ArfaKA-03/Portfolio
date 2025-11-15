@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +16,11 @@
     <!-- Navbar -->
     <header class="header">
         <a href="#" class="logo">Arfa K A</a>
-        <i class='bx bx-menu' id="menu" style='color:#6b22a8'></i>
+        <i class='bx bx-menu' id="menu" style='color: #6b22a8'></i>
         <nav class="navbar">
             <a href="#home" style="--vlr:1" class="active">Home</a>
             <a href="#about" style="--vlr:2">About Me</a>
+            <a href="#education" style="--vlr:3">Education</a>
             <a href="#skills" style="--vlr:4">Skills</a>
             <a href="#projects" style="--vlr:4">Projects</a>
             <a href="#contact" style="--vlr:5">Contact Me</a>
@@ -30,7 +31,7 @@
         <div class="text-content">
             <h1>I'm Arfa K A</h1>
             <div class="text-animation">
-                <h2>Software Developer</h2>
+                <h2>Software Developer | MERN Full-Stack</h2>
             </div>
             <div class="btn-section">
                 <button class="btn" onclick="location.href='#projects'">Projects</button>
@@ -43,27 +44,55 @@
                     <i class='bx bxl-linkedin' style="--vlr:8"></i></a>
             </div>
         </div>
-        <img src="arfa1.jpg" alt="image">
+        <img src="c:\Users\arfas\OneDrive\Pictures\arfa1.jpg" alt="image">
     </section>
     <!-- About Section -->
     <section class="about" id="about">
         <h2 class="title">About <span>Me</span></h2>
         <div class="text-content2">
-            <h2>Software Developer</h2>
+            <h2>Software Developer | MERN Full-Stack</h2>
             <div class="HomeText">
                 <p>
-                    Hi Everyone, I am Arfa K A from Bengaluru, India.
-                    I am currently pursuing my B.E in Information Science from Jyothy Institute of Technology Bengaluru
-                    (2022-present).
-                    <br>I'm passionate about creating efficient, user-friendly web applications and also intrested in
-                    Machine Learning.
-                    <br>As a software developer, I love solving challenges, building creative
-                    solutions, and continuously learning to improve my skills.
+                    I’m a final-year B.E. student in Information Science & Engineering with a strong passion for
+                    developing web applications, AI-powered solutions, and tools that have a real-world impact.
+                    Experienced in full-stack development (MERN) and machine learning, I enjoy designing projects that
+                    merge technology with an intuitive and engaging user experience.
                 </p>
             </div>
         </div>
         </div>
     </section>
+    <!-- Education Section -->
+     <section class="education" id="education">
+    <h2 class="title">Education <span>Qualification</span></h2>
+    <div class="text-contente2">
+        <ul class="education-list">
+            <li>
+                <strong>B.E. in Information Science & Engineering</strong>
+                <ul>
+                    Jyothy Institute of Technology, Visvesvaraya Technological University (VTU)
+                    <br>Current CGPA: 9.49/10
+                    Final Year Student
+                </ul>
+            </li>
+            <li>
+                <strong>Senior Secondary School</strong>
+                <ul>
+                    Sri Sri Ravishankar Vidya Mandir 
+                    Percentage: 79.4
+                </ul>
+            </li>
+            <li>
+                <strong>Secondary School</strong>
+                <ul>
+                    D A V Public School
+                    Percentage: 80.6
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
     <!-- ************************Skills Section************************ -->
     <section class="skills" id="skills">
         <h2 class="title">My <span>Skills</span></h2>
@@ -98,12 +127,11 @@
             <div class="skill-box"><i class="fas fa-robot"></i>
                 <p>Machine Learning</p>
             </div>
-            <div class="skill-box"><i class="fab fa-python"></i>
-                <p>Python</p>
-            </div>
-
             <div class="skill-box"><i class="devicon-cplusplus-plain"></i>
                 <p>C++</p>
+                </div>
+            <div class="skill-box"><i class="fab fa-python"></i>
+                <p>Python</p>
             </div>
         </div>
     </section>
@@ -113,32 +141,55 @@
         <h2 class="section-title">My Recent <span>Works</span></h2>
         <div class="projects-container">
             <!-- Project 1 -->
+             <div class="project-card">
+                <img src="AdaMind.png" alt="AdaMind Project" class="project-image">
+                <h3>AdaMind AI Study Partner</h3>
+                <p>
+                    AdaMind is an intelligent study companion designed to make learning more efficient and engaging. By leveraging advanced AI, it generates customized quizzes from user prompts, creates interactive flashcards, and helps students reinforce concepts effectively.
+                    <br>
+                    <p><h5>Tech Stack:</h5> React.js, JavaScript, CSS, Node.js, Express, MongoDB, AI/LLM (Gemini 2.0 Flash)</p>
+                    <a href="https://adamind.onrender.com" target="_blank"
+                        class="view-link">View Here</a>
+                </p>
+            </div>
+            <!-- Project 2 -->
+             <div class="project-card">
+                <img src="Vidhiwise.jpg" alt="Vidhiwise Project" class="project-image">
+                <h3>VidhiWise(Ongoing)</h3>
+                <p>
+                    A legal knowledge platform powered by LLMs and NLP, designed to simplify legal research and document handling. Features include case law search, document summarization, and automated legal document generation for lawyers and law firms.
+                    <br>
+                    <p><h5>Tech Stack:</h5> React, Node.js, Express, MongoDB, NLP</p>
+                    <a href="" target="_blank"
+                        class="view-link">Soon</a>
+                </p>
+            </div>
+            <!-- Project 3 -->
             <div class="project-card">
                 <img src="leaf.png" alt="Leaf Forms Project" class="project-image">
                 <h3>Online Leaf Forms</h3>
                 <p>
-                    An interactive form builder application, enabling users to create and manage forms effortlessly.
-                    <br>
+                    An interactive form builder application that enables users to create, customize, and manage forms effortlessly. Users can design multiple types of forms including surveys, quizzes, and feedback forms with a drag-and-drop interface
+                     <br>
+                    <p><h5>Tech Stack:</h5> HTML5, CSS,JavaScript</p>
                     <a href="https://arfaka-03.github.io/Online-forms-website/index.html" target="_blank"
                         class="view-link">View Here</a>
                 </p>
             </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="" alt="" class="project-image">
-                <h3></h3>
-                <p></p>
-            </div>
-            
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="" alt="" class="project-image">
-                <h3></h3>
-                <p></p>
-            </div>
         </div>
     </section>
+
+
+    <!-- <div class="project">
+        <h3>Project 2: ShadeShift</h3>
+        <div class="project-details">
+            <img src="path/to/shadeshift-image.png" alt="ShadeShift Project" class="project-image">
+            <p>This Image Colorizer uses deep learning to convert black-and-white images into realistic colored versions.
+                It can be applied to MRI and X-ray images, enhancing contrast and highlighting critical areas, aiding medical professionals in better diagnosis and interpretation.
+            </p>
+        </div>
+    </div>
+</section> -->
 
     <!-- ************************Contact Section************************ -->
     <section class="contact" id="contact">
@@ -159,8 +210,6 @@
         </form>
     </section>
 
-    <!---******************Projects**************************-->
-    
     <!---******Footer-section*******-->
     <footer>
         <div class="text">
