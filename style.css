@@ -310,8 +310,6 @@ i:hover::after{
         scale: 1;
     }
 }
-
-
 /* about section */
 .about{
     display: flex;
@@ -616,7 +614,7 @@ section.start-animation .title{
     color: #000;
     text-align: center;
     border-radius: 1rem;
-    font-size: 13px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -634,7 +632,7 @@ section.start-animation .skill-box {
 
 /* Icon styling */
 .skill-box i {
-    font-size: 40px;
+    font-size: 46px;
     color: #c9d1d9;
     transition: transform 0.3s;
 }
@@ -648,8 +646,85 @@ section.start-animation .skill-box {
 /* Name styling */
 .skill-box p {
     margin: 0;
-    font-size: 12px;
+    font-size: 22px;
     font-weight: 500;
+}
+/*Experience*/
+.experience-list {
+    list-style-type: none; /* remove default bullets */
+    padding: 0;
+}
+
+.experience-list > li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    justify-content: left;
+}
+
+.experience-list > li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Company Name */
+.experience-list > li > strong {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 6px;
+    color: #793fa9;
+}
+
+/* Nested details */
+.experience-list > li > ul {
+    color: #fff;
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+
+.experience-list > li > ul li {
+    margin-bottom: 5px;
+}
+
+/* Last item styling */
+.experience-list > li > ul li:last-child {
+    font-weight: 500;
+}
+
+/* ------------------------ */
+/* Responsive Design */
+@media (max-width: 991px) {
+    .experience-list > li {
+        padding: 15px;
+    }
+
+    .experience-list > li > strong {
+        font-size: 18px;
+    }
+
+    .experience-list > li > ul {
+        font-size: 1.2rem;
+    }
+}
+
+/* Small devices (phones) */
+@media (max-width: 575px) {
+    .experience-list > li {
+        padding: 12px;
+    }
+
+    .experience-list > li > strong {
+        font-size: 16px;
+    }
+
+    .experience-list > li > ul {
+        font-size: 1rem;
+    }
+
+    .experience-list > li > ul li {
+        margin-bottom: 4px;
+    }
 }
 
 /*Project section*/
